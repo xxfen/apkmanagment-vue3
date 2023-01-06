@@ -1,0 +1,43 @@
+.in-topCard {
+	width: 100%;
+	height: 130px;
+	border-radius: 5px;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.in-topCard .item {
+	width: 33%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.in-topCard .item:nth-child(2) {
+	margin: 0px 0.5%;
+}
+
+.in-topCard .item .hint {
+	color: #8a8a8a;
+	font-size: 14px;
+
+}
+
+.in-topCard .item .count {
+	height: 50px;
+	line-height: 50px;
+	font-size: 28px;
+	color: #797979;
+}
+
+.in-card {
+	height: calc(100% - 150px);
+	margin-top: 10px;
+	border-radius: 5px;
+	background-color: white;
+	padding: 10px;
+}

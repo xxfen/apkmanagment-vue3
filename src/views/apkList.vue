@@ -220,8 +220,8 @@ overflow-x: auto;">
 				SearchAppApk(this.$route.params.id).then((response) => {
 					me.data = response.data;
                   me.haveUpdate=  response.update
-					me.url = global.$httpUrl + me.data.url
-					me.baseUrl = global.$httpUrl
+					me.url = import.meta.env.VITE_APP_API_BASE_URL + me.data.url
+					me.baseUrl = import.meta.env.VITE_APP_API_BASE_URL
 					console.log(me.url)
 
 				}).catch((error) => {

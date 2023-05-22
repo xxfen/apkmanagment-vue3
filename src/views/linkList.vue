@@ -93,7 +93,7 @@
 			getData() {
 				var me = this;
 				var global = inject('global');
-				me.url = global.$httpUrl
+				me.url = import.meta.env.VITE_APP_API_BASE_URL
 				SearchLinks(me.qform).then((response) => {
 					me.totalCount = response.page.totalCount
 					me.tableData = response.page.list;

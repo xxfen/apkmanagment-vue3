@@ -12,8 +12,8 @@ export default defineConfig({
 		'process.env': {
 			// const urlApi = 'http://localhost:8090/'; //本地测试
 			//const urlApi='http://43.142.31.147:8090/';//process.env.VUE_APP_API_BASE_URL
-			'VUE_APP_API_BASE_URL': 'http://43.142.31.147:8090/',
-			'VUE_APP_NAME': '安卓安装包管理后台'
+			'VITE_APP_API_BASE_URL': 'http://43.142.31.147:8091/',
+			'VITE_VUE_APP_NAME': '安卓安装包管理后台'
 		}
 	},
 	plugins: [

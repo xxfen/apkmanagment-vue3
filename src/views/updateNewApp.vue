@@ -53,7 +53,7 @@
 		useRoute
 	} from 'vue-router';
 	// 获取全局对象`
-	const url = inject('global').$httpUrl + 'apk/uploadingNewApp';
+	const url = import.meta.env.VITE_APP_API_BASE_URL + 'apk/uploadingNewApp';
 	const forcedUpdating = ref(false)
 	const content = ref('');
 	const Route = useRoute(); //获取到值

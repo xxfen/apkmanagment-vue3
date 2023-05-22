@@ -50,7 +50,7 @@
 	} from 'vue';
 
 	// 获取全局对象`
-	const url = inject('global').$httpUrl + 'app/uploadingApp';
+	const url = import.meta.env.VITE_APP_API_BASE_URL + 'app/uploadingApp';
 	const forcedUpdating = ref(false)
 	const content = ref('');
 	const uploadContents = ref({

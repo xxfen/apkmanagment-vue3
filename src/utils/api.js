@@ -4,8 +4,8 @@
 import axios from './request.js';
 import Qs from 'qs';
 // const urlApi = 'http://localhost:8090/'; //本地测试
-const urlApi=process.env.VUE_APP_API_BASE_URL;
-
+const urlApi=import.meta.env.VITE_APP_API_BASE_URL;
+console.log(urlApi)
 // 登录
 export function UserLogin(query) {
 	return axios({
